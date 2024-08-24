@@ -1,0 +1,88 @@
+cat selected.txt commands.txt 
+192 processes.txt
+message+     492  0.1  0.1   9008  5884 ?        Ss   15:16   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         502  0.0  0.4  42384 16324 ?        Ss   15:16   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         639  0.1  0.5 192944 21524 ?        Ssl  15:16   0:00 /usr/bin/python3 /usr/lib/python3/dist-packages/timekpr/server/timekprd.py /usr/bin/timekprd
+sebasti+    1031  1.3  0.4 1224216 19260 ?       S<sl 15:16   0:08 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+sebasti+    1034  0.0  0.1 243068  5764 ?        Sl   15:16   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+sebasti+    1038  0.0  0.1   8484  5468 ?        Ss   15:16   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+sebasti+    1121  0.0  0.0   6036    32 ?        Ss   15:16   0:00 /usr/bin/ssh-agent /usr/bin/im-launch startxfce4
+sebasti+    1131  0.1  0.1 314008  6792 ?        Ssl  15:16   0:00 /usr/bin/ibus-daemon --daemonize --xim
+sebasti+    1184  0.0  0.1   7592  4392 ?        S    15:16   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+sebasti+    1220  0.0  0.0  86392  3276 ?        SLs  15:16   0:00 /usr/bin/gpg-agent --supervised
+sebasti+    1245  0.0  0.1 242600  6976 ?        Sl   15:16   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+sebasti+    1389  0.0  0.8  62984 31512 ?        S    15:16   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+sebasti+    1400  0.1  0.9 400984 37700 ?        Sl   15:16   0:00 /usr/bin/python3 /usr/lib/python3/dist-packages/timekpr/client/timekprc.py /usr/bin/timekprc
+  840  ls
+  841  cd HW
+  842  touch processes.txt
+  843  clear
+  844  ls
+  845  ps aux < processes.txt
+  846  cat processes.txt 
+  847  clear
+  848  ls
+  849  processes.txt | ps aux
+  850  ps aux | processes.txt
+  851  ls
+  852  clear
+  853  echo ps aux
+  854  clear
+  855  ps aux &> processes.txt
+  856  cat processes.txt 
+  857  clear
+  858  cp processes.txt copy.txt
+  859  mkdir backup
+  860  mv copy.txt backup/
+  861  cd backup
+  862  ls
+  863  cd ..
+  864  clear
+  865  wc processes.txt
+  866  man wc
+  867  wc -l processes.txt 
+  868  clear
+  869  wc -l processes.txt | selected.txt
+  870  selected.txt | wc -l processes.txt 
+  871  wc -l processes.txt &> selected.txt
+  872  ls
+  873  less selected.txt 
+  874  clear
+  875  man grep
+  876  clear
+  877  grep /bin processes.txt
+  878  clear
+  879  grep /bin processes.txt << selected.txt 
+a
+a
+a
+a
+
+  880  clear
+  881  cat selected.txt 
+  882  grep /bin processes.txt >> selected.txt
+  883  CAT S
+  884  cat selected.txt
+  885  clear
+  886  history
+  887  history | tail -51n < commands.txt
+  888  history < commands.txt | tail -51n
+  889  man tail
+  890  touch commands.txt
+  891  history
+  892  history < commands.txt | tail -n56
+  893  history | tail -n57 < commands.txt
+  894  cat commands.txt 
+  895  history | tail -n57
+  896  history | tail -n60
+  897  history | tail -n67 < commands.txt
+  898* cat commands.tx
+  899  history | tail -n69 > commands.txt
+  900  cat commands.txt 
+  901  history | tail -n59 > commands.txt
+  902  cat commands.txt 
+  903  history | tail -n61 > commands.txt && cat commands.txt 
+  904  history | tail -n63 > commands.txt && cat commands.txt 
+  905  history | tail -n65 > commands.txt && cat commands.txt 
+  906  history | tail -n70 > commands.txt && cat commands.txt 
+  907  history | tail -n73 > commands.txt && cat commands.txt 
