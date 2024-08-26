@@ -1,88 +1,51 @@
-cat selected.txt commands.txt 
-192 processes.txt
-message+     492  0.1  0.1   9008  5884 ?        Ss   15:16   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root         502  0.0  0.4  42384 16324 ?        Ss   15:16   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
-root         639  0.1  0.5 192944 21524 ?        Ssl  15:16   0:00 /usr/bin/python3 /usr/lib/python3/dist-packages/timekpr/server/timekprd.py /usr/bin/timekprd
-sebasti+    1031  1.3  0.4 1224216 19260 ?       S<sl 15:16   0:08 /usr/bin/pulseaudio --daemonize=no --log-target=journal
-sebasti+    1034  0.0  0.1 243068  5764 ?        Sl   15:16   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
-sebasti+    1038  0.0  0.1   8484  5468 ?        Ss   15:16   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-sebasti+    1121  0.0  0.0   6036    32 ?        Ss   15:16   0:00 /usr/bin/ssh-agent /usr/bin/im-launch startxfce4
-sebasti+    1131  0.1  0.1 314008  6792 ?        Ssl  15:16   0:00 /usr/bin/ibus-daemon --daemonize --xim
-sebasti+    1184  0.0  0.1   7592  4392 ?        S    15:16   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
-sebasti+    1220  0.0  0.0  86392  3276 ?        SLs  15:16   0:00 /usr/bin/gpg-agent --supervised
-sebasti+    1245  0.0  0.1 242600  6976 ?        Sl   15:16   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
-sebasti+    1389  0.0  0.8  62984 31512 ?        S    15:16   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
-sebasti+    1400  0.1  0.9 400984 37700 ?        Sl   15:16   0:00 /usr/bin/python3 /usr/lib/python3/dist-packages/timekpr/client/timekprc.py /usr/bin/timekprc
-  840  ls
-  841  cd HW
-  842  touch processes.txt
-  843  clear
-  844  ls
-  845  ps aux < processes.txt
-  846  cat processes.txt 
-  847  clear
-  848  ls
-  849  processes.txt | ps aux
-  850  ps aux | processes.txt
-  851  ls
-  852  clear
-  853  echo ps aux
-  854  clear
-  855  ps aux &> processes.txt
-  856  cat processes.txt 
-  857  clear
-  858  cp processes.txt copy.txt
-  859  mkdir backup
-  860  mv copy.txt backup/
-  861  cd backup
-  862  ls
-  863  cd ..
-  864  clear
-  865  wc processes.txt
-  866  man wc
-  867  wc -l processes.txt 
-  868  clear
-  869  wc -l processes.txt | selected.txt
-  870  selected.txt | wc -l processes.txt 
-  871  wc -l processes.txt &> selected.txt
-  872  ls
-  873  less selected.txt 
-  874  clear
-  875  man grep
-  876  clear
-  877  grep /bin processes.txt
-  878  clear
-  879  grep /bin processes.txt << selected.txt 
-a
-a
-a
-a
-
-  880  clear
-  881  cat selected.txt 
-  882  grep /bin processes.txt >> selected.txt
-  883  CAT S
-  884  cat selected.txt
-  885  clear
-  886  history
-  887  history | tail -51n < commands.txt
-  888  history < commands.txt | tail -51n
-  889  man tail
-  890  touch commands.txt
-  891  history
-  892  history < commands.txt | tail -n56
-  893  history | tail -n57 < commands.txt
-  894  cat commands.txt 
-  895  history | tail -n57
-  896  history | tail -n60
-  897  history | tail -n67 < commands.txt
-  898* cat commands.tx
-  899  history | tail -n69 > commands.txt
-  900  cat commands.txt 
-  901  history | tail -n59 > commands.txt
-  902  cat commands.txt 
-  903  history | tail -n61 > commands.txt && cat commands.txt 
-  904  history | tail -n63 > commands.txt && cat commands.txt 
-  905  history | tail -n65 > commands.txt && cat commands.txt 
-  906  history | tail -n70 > commands.txt && cat commands.txt 
-  907  history | tail -n73 > commands.txt && cat commands.txt 
+$ cat selected.txt commands.txt
+200 processes.txt
+77:message+     574  0.0  0.1   8980  5808 ?        Ss   21:47   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+80:root         586  0.0  0.4  42384 19192 ?        Ss   21:47   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+94:root         731  0.0  0.5 192944 23196 ?        Ssl  21:47   0:01 /usr/bin/python3 /usr/lib/python3/dist-packages/timekpr/server/timekprd.py /usr/bin/timekprd
+101:sebasti+    1029  0.0  0.4 1076052 17252 ?       S<sl 21:48   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+102:sebasti+    1032  0.0  0.1 242936  7680 ?        Sl   21:48   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+104:sebasti+    1042  0.0  0.1   8488  5384 ?        Ss   21:48   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+105:sebasti+    1119  0.0  0.0   6036   456 ?        Ss   21:48   0:00 /usr/bin/ssh-agent /usr/bin/im-launch startxfce4
+106:sebasti+    1129  0.3  0.2 314648  8608 ?        Ssl  21:48   0:04 /usr/bin/ibus-daemon --daemonize --xim
+115:sebasti+    1181  0.0  0.1   7724  4332 ?        S    21:48   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+123:sebasti+    1217  0.0  0.0  86392  3660 ?        SLs  21:48   0:00 /usr/bin/gpg-agent --supervised
+127:sebasti+    1242  0.0  0.1 242600  7788 ?        Sl   21:48   0:00 /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+151:sebasti+    1392  0.0  0.8  62984 34300 ?        S    21:48   0:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+153:sebasti+    1402  0.0  1.3 400988 51072 ?        Sl   21:48   0:00 /usr/bin/python3 /usr/lib/python3/dist-packages/timekpr/client/timekprc.py /usr/bin/timekprc
+185:sebasti+    2033  0.0  0.1  13828  5572 pts/1    Ss+  21:48   0:00 /bin/bash --init-file /usr/share/code/resources/app/out/vs/workbench/contrib/terminal/browser/media/shellIntegration-bash.sh
+186:sebasti+    2193  6.3  1.2  94788 47984 ?        Sl   21:48   1:18 /home/sebastians/.vscode/extensions/ms-vscode.cpptools-1.21.6-linux-x64/bin/cpptools
+189:sebasti+    2285  1.2  1.7 4267104 68036 ?       Sl   21:48   0:15 /home/sebastians/.vscode/extensions/ms-vscode.cpptools-1.21.6-linux-x64/bin/cpptools-srv 2193 {C3A1813B-B34E-4BB9-A588-1919C1D95D7E}
+193:sebasti+    2669  0.1  1.8 4266100 70512 ?       Sl   21:58   0:01 /home/sebastians/.vscode/extensions/ms-vscode.cpptools-1.21.6-linux-x64/bin/cpptools-srv 2193 {90FF33A4-5F33-47A8-BC37-338462E0744F}
+  939  cd HW
+  940  touch processes.txt
+  941  ps aux > processes.txt
+  942  cat processes.txt 
+  943  clear
+  944  cp processes.txt copy.txt
+  945  mkdir backup
+  946  mv copy.txt backup/
+  947  cd backup/
+  948  ls
+  949  cd ..
+  950  clear
+  951  wc -l processes.txt | selected.txt
+  952  touch selected.txt
+  953  wc -l processes.txt | selected.txt
+  954  wc -l processes.txt &> selected.txt
+  955  man grep
+  956  grep -name -n processes.txt "/bin" >> selected.txt
+  957  man grep
+  958  grep -name --line-number processes.txt "/bin" >> selected.txt
+  959  grep --line-number processes.txt "/bin" >> selected.txt
+  960  grep -name -f --line-number processes.txt "/bin" >> selected.txt
+  961  man grep
+  962  grep -name -n "/bin" processes.txt >> selected.txt
+  963  grep -name -n "/bin" processes.txt | selected.txt
+  964  grep --name -n "/bin" processes.txt >> selected.txt
+  965  grep -name -n "/bin" processes.txt >> selected.txt
+  966  man grep
+  967  grep -n "/bin" processes.txt >> selected.txt
+  968  history
+  969  touch commands.txt
+  970  history | tail -n32 > commands.txt
