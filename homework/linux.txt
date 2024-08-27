@@ -1,5 +1,5 @@
 $ cat selected.txt commands.txt
-200 selected.txt
+200 processes.txt
 77:message+     574  0.0  0.1   8980  5808 ?        Ss   21:47   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 80:root         586  0.0  0.4  42384 19192 ?        Ss   21:47   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
 94:root         731  0.0  0.5 192944 23196 ?        Ssl  21:47   0:01 /usr/bin/python3 /usr/lib/python3/dist-packages/timekpr/server/timekprd.py /usr/bin/timekprd
