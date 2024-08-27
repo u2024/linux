@@ -29,7 +29,7 @@ $ cat selected.txt commands.txt
   948  ls
   949  cd ..
   950  clear
-  951  grep -c . processes.txt | selected.txt
+  951  wc -l processes.txt > selected.txt
   952  touch selected.txt
   953  wc -l processes.txt | selected.txt
   954  wc -l processes.txt &> selected.txt
